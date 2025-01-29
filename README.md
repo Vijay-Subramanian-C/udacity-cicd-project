@@ -52,6 +52,15 @@ In the `starter` folder, you'll find 2 folders, one named `frontend` and one nam
    5. Runs a deploy job that applies the Kubernetes manifests to the provided cluster.
       1. The manifest should deploy the newly created tagged image
       2. The tag applied to the image should be the git SHA of the commit that triggered the build
+## Connecting to git repo and pushing the code
+1. run **git auth login** from workspace.
+2. Login through sequence of steps and connect to the git repo.
+3. run **git init** from the directory in workspace
+4. clone the repo using **git clone <repo url>**
+5. Inside the repo directory update the required files
+6. run **git add .**
+7. run **git commit -m "commit"**
+8. run **git push origin main** to push the code into main branch.
 
 **⚠️ NOTE**
 Once you begin work on Continuous Deployment, you'll need to first setup the AWS and Kubernetes environment. Follow the [instructions below](#setting-up-continuous-deployment-environment)  instructions only when you're ready to start testing your deployments.
