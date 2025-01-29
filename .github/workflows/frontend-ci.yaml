@@ -1,5 +1,5 @@
 # Workflow name
-name: frontend-ci
+name: Frontend Conitnuous Integration
 
 # Triggers for the workflow
 on:
